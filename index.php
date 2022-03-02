@@ -20,8 +20,23 @@ $itemCollection->sortCollection(
     fn($a, $b) => ItemCollectionSorter::getDefaultSortCallback($a, $b)
 );
 
+echo PHP_EOL;
+echo '--------------------------------------------------';
+echo PHP_EOL;
+echo 'Running the crawler:';
+echo PHP_EOL;
+echo PHP_EOL;
+
 try {
     echo $itemCollection->toJson();
 } catch (JsonException $e) {
     echo $e->getMessage();
 }
+
+echo PHP_EOL;
+echo PHP_EOL;
+echo 'Finished!';
+echo PHP_EOL;
+echo '--------------------------------------------------';
+echo PHP_EOL;
+echo PHP_EOL;

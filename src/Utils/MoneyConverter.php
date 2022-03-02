@@ -6,7 +6,9 @@ class MoneyConverter
 {
     public static function convertStringPriceToIntegerCents(string $stringPrice): int
     {
-        return (int)((float)$stringPrice * 100);
+        $multiplication = ((float)$stringPrice) * 100;
+
+        return (int)round($multiplication);
     }
 
     public static function convertCentsToCurrency(int $cents): float

@@ -28,12 +28,12 @@ class MoneyConverterTest extends TestCase
     private function testCentToCurrencyConversion(): void
     {
         self::assertNotSame(
-            MoneyConverter::convertCentsToCurrency(12000),
+            MoneyConverter::convertCentsToCurrency(12017),
             111.23
         );
         self::assertSame(
-            MoneyConverter::convertCentsToCurrency(12000),
-            120.00
+            MoneyConverter::convertCentsToCurrency(12011),
+            120.11
         );
     }
 }

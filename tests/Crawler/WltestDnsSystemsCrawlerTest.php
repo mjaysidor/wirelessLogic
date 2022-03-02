@@ -49,7 +49,7 @@ class WltestDnsSystemsCrawlerTest extends TestCase
                     "title"       => "Optimum: 24GB Data - 1 Year",
                     "description" => "Up to 12GB of data per year including 480 SMS(5p / MB data and 4p / SMS thereafter)",
                     "price"       => 17400,
-                    "discount"    => 1789,
+                    "discount"    => 1790,
                 ],
             ],
             (new WltestDnsSystemsCrawler())->crawl()
